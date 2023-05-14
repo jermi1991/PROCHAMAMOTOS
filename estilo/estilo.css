@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* MENU INFORMATIVO */
+header nav {
+    background-color: rgb(240, 187, 25);
+   
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    width: 24.5%;
+    
+}
+header nav ul li a{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   text-align: center;
+   padding: 0.2em 0.4em;
+   transition: all 0.2 ease;
+
+}
+
+header nav ul li a:hover {
+    background-color: rgb(0,0,0,0.3);
+}
+
+
+/* ICONO DE INFORMACION  */
+
+header nav ul li .logowhatsapp {
+width: 14px;
+}
+header nav ul li .logomaps{
+    width: 14px;
+}
+header nav ul li .iconotelefono{
+    width: 14px;
+}
+header nav ul li .iconoreloj{
+    width: 14px;
+}
+
+
+/* LOGOS  */
+header {
+    background-color: rgba(74, 70, 70, 0.892);
+    padding: 0;
+    margin: 0;
+    
+    
+}
+header .logo-redondo {
+background-color: rgb(255, 255, 255);
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    border-radius: 100px;
+    margin: 6px;
+    padding: 0px;
+
+}
+header .imagenletra{
+    width: 250px;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+
+}
+/* BARRA DE NAVEGACION */
+nav {
+    background-color: rgb(143, 91, 255);
+    margin-bottom: 2em;
+}
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   
+  
+}
+nav li {
+    display: inline-block;
+    width: 16.3%;
+    
+    
+}
+.barranav nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+.barranav nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* ESTILO FOOTER  */
+footer{
+    background-color: gray;
+    clear: both;
+    color: #333;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
