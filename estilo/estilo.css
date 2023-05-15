@@ -109,3 +109,57 @@ footer{
     margin-top: 2em;
     text-align: center;
 }
+
+
+
+
+/* GALERIA EN ANIMACION */
+main .slider{
+    width: 95%;
+    margin-left: 530px;
+    overflow: hidden;
+  
+
+
+}
+
+main .slider ul{
+    display: flex;
+    padding: 1px;
+    width: 500%;
+
+    animation: cambio 30s infinite;
+    animation-direction: cambio 10s alternate;
+}
+main .slider li{
+    width: 100%;
+    list-style: none;
+}
+main .slider img{
+    width: 70%;
+
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    40% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    60% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    80% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+
+}
+/* GIT TALLER  */
+.gittaller img{
+    width: 500px;
+    position: absolute;
+    top: 302px;
+    left: 10px;
+}
