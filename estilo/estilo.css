@@ -53,7 +53,7 @@ header {
     
     
 }
-.logo-redondo {
+header .logo-redondo {
 background-color: rgb(255, 255, 255);
     width: 180px;
     display: inline-block;
@@ -63,7 +63,7 @@ background-color: rgb(255, 255, 255);
     padding: 0px;
 
 }
-.imagenletra{
+header .imagenletra{
     width: 250px;
     display: inline-block;
     position: relative;
@@ -114,16 +114,13 @@ footer{
 
 
 /* GALERIA EN ANIMACION */
-.slider{
+main .slider{
     width: 95%;
     margin-left: 530px;
     overflow: hidden;
-  
-
-
 }
 
-.slider ul{
+main .slider ul{
     display: flex;
     padding: 1px;
     width: 500%;
@@ -131,11 +128,13 @@ footer{
     animation: cambio 30s infinite;
     animation-direction: cambio 10s alternate;
 }
-.slider li{
+
+main .slider li{
     width: 100%;
     list-style: none;
 }
-.slider img{
+
+main .slider img{
     width: 70%;
 
 }
@@ -156,8 +155,9 @@ footer{
     100% {margin-left: -400%;}
 
 }
+
 /* GIT TALLER  */
-.gittaller img{
+main .gittaller img{
     width: 500px;
     position: absolute;
     top: 302px;
