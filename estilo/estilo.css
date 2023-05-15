@@ -53,7 +53,7 @@ header {
     
     
 }
-header .logo-redondo {
+.logo-redondo {
 background-color: rgb(255, 255, 255);
     width: 180px;
     display: inline-block;
@@ -63,7 +63,7 @@ background-color: rgb(255, 255, 255);
     padding: 0px;
 
 }
-header .imagenletra{
+.imagenletra{
     width: 250px;
     display: inline-block;
     position: relative;
@@ -114,7 +114,7 @@ footer{
 
 
 /* GALERIA EN ANIMACION */
-main .slider{
+.slider{
     width: 95%;
     margin-left: 530px;
     overflow: hidden;
@@ -123,7 +123,7 @@ main .slider{
 
 }
 
-main .slider ul{
+.slider ul{
     display: flex;
     padding: 1px;
     width: 500%;
@@ -131,11 +131,11 @@ main .slider ul{
     animation: cambio 30s infinite;
     animation-direction: cambio 10s alternate;
 }
-main .slider li{
+.slider li{
     width: 100%;
     list-style: none;
 }
-main .slider img{
+.slider img{
     width: 70%;
 
 }
