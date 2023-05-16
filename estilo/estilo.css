@@ -106,7 +106,7 @@ nav li {
     text-decoration: none;
     text-align: center;
     display: block;
-    padding: 0.2em 0.4em;
+    padding: 0.6em 0.4em;
 }
  .barranav nav ul li a:hover{
     background-color: rgba(0,0,0,0.3);
@@ -114,12 +114,12 @@ nav li {
 
 /* ESTILO FOOTER  */
 footer{
-    background-color: gray;
+    background-color: rgb(27, 23, 23);
     clear: both;
-    color: #333;
+    color: #ffffff;
     padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
+    margin-top: 1em;
+    text-align:center;
 }
 
 main{
@@ -173,6 +173,19 @@ main{
     100% {margin-left: -400%;}
 
 }
+/* LOGO DE MARCAS */
+.logosmarcas .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    margin: 10px;
+}
+.logosmarcas .flex-container img{
+    height: 60px;
+    width: 130px;
+}
+
+
 /* Catalago Productos */
 .cata{
     text-align: center;
@@ -231,16 +244,4 @@ main{
     cursor: pointer;
 }
 
-/* .fle-container div {
-    
-    display: flex;
-    justify-content:left;
-    
-    
-}
-.fle-container div img{
-    width: 340px;
-    margin-left: 10px;
- 
-} */
 
