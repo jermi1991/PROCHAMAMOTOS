@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
+    margin: auto;
 }
 
 /* MENU INFORMATIVO */
@@ -122,7 +123,7 @@ footer{
 }
 
 main{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.958);
     margin-left: 10px;
   margin-right: 10px;
 
@@ -171,6 +172,63 @@ main{
     80% {margin-left: -400%;}
     100% {margin-left: -400%;}
 
+}
+/* Catalago Productos */
+.cata{
+    text-align: center;
+    background-color: #ff731b;
+    font-style: italic;
+}
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border-radius: 10px;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
 }
 
 /* .fle-container div {
