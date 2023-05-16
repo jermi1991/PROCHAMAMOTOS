@@ -1,4 +1,5 @@
 body {
+    background-color: rgba(14, 14, 14, 0.526);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -48,28 +49,38 @@ header nav ul li .iconoreloj{
 /* LOGOS  */
 header {
     background-color: rgba(74, 70, 70, 0.892);
-    padding: 0;
-    margin: 0;
+   margin: 0;
+   padding: 0;
     
     
 }
-header .logo-redondo {
-background-color: rgb(255, 255, 255);
-    width: 180px;
-    display: inline-block;
-    position: relative;
-    border-radius: 100px;
-    margin: 6px;
-    padding: 0px;
+header .flex-container{
+    display: flex;
+    /* justify-content: space-between; */
+
 
 }
-header .imagenletra{
+ .logo-container {
     width: 250px;
-    display: inline-block;
-    position: relative;
-    bottom: 30px;
+ 
+
 
 }
+header .letralogo-container{
+    margin: auto;
+    width: 450px;
+    height: 150px;
+    
+
+}
+/* BUSCADOR */
+
+.input-group {
+    margin-top: 140px;
+    width: 400px;
+height: 10px;
+}
+
 /* BARRA DE NAVEGACION */
 nav {
     background-color: rgb(143, 91, 255);
@@ -89,14 +100,14 @@ nav li {
     
     
 }
-.barranav nav ul li a {
+ .barranav nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
     display: block;
     padding: 0.2em 0.4em;
 }
-.barranav nav ul li a:hover{
+ .barranav nav ul li a:hover{
     background-color: rgba(0,0,0,0.3);
 }
 
@@ -110,36 +121,42 @@ footer{
     text-align: center;
 }
 
+main{
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+  margin-right: 10px;
+
+
+}
 
 
 
 /* GALERIA EN ANIMACION */
-main .slider{
-    width: 95%;
-    margin-left: 530px;
+.slider{
+    width: 100%;
     overflow: hidden;
+   
 }
 
-main .slider ul{
+.slider ul{
     display: flex;
-    padding: 1px;
+    padding:10px;
     width: 500%;
-
     animation: cambio 30s infinite;
-    animation-direction: cambio 10s alternate;
+    animation-direction: alternate;
 }
 
-main .slider li{
+ .slider li{
     width: 100%;
     list-style: none;
 }
 
-main .slider img{
-    width: 70%;
+.slider img{
+    width: 100%;
 
 }
 @keyframes cambio {
-    0% {margin-left: 0;}
+    10% {margin-left: 0;}
     20% {margin-left: 0;}
 
     20% {margin-left: -100%;}
@@ -156,10 +173,16 @@ main .slider img{
 
 }
 
-/* GIT TALLER  */
-main .gittaller img{
-    width: 500px;
-    position: absolute;
-    top: 302px;
-    left: 10px;
+/* .fle-container div {
+    
+    display: flex;
+    justify-content:left;
+    
+    
 }
+.fle-container div img{
+    width: 340px;
+    margin-left: 10px;
+ 
+} */
+
