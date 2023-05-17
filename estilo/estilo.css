@@ -49,8 +49,8 @@ header nav ul li .iconoreloj{
 
 /* LOGOS  */
 header {
-    background-color: rgba(74, 70, 70, 0.892);
-   margin: 0;
+    background-color:#000;
+    margin: 0;
    padding: 0;
     
     
@@ -119,17 +119,34 @@ footer{
     color: #ffffff;
     padding: 3em 0;
     margin-top: 1em;
-    text-align:center;
+    margin: 1px;
+    /* text-align:center; */
 }
+.grid-footer {
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 300px 300px 390px 400px;
+   
+}
+.grid-footer ul {
+   text-align: center;
+   list-style: none;
+}
+.grid-footer h1 img{
+    text-decoration: none;
+    width: 130px;
+}
+footer p{ 
+    margin-top:100px ;
+    text-align: center;
+}
+
 
 main{
-    background-color: rgba(255, 255, 255, 0.958);
-    margin-left: 10px;
-  margin-right: 10px;
-
-
+background-color: rgba(255, 255, 255, 0.958);
+margin-left: 10px;
+margin-right: 10px;
 }
-
 
 
 /* GALERIA EN ANIMACION */
