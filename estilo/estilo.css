@@ -81,49 +81,11 @@ header .letralogo-container{
     height: 150px;
     
 
-}
-/* @MEDIA QUERY header logos empresa */
-@media (max-width:390px){
-    /* HEADER DE BARRA DE NAVEGACION */
-    /* LOGOS :  */
-    header .grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 
-    minmax(150px, 1fr));
-    gap: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  
 
-    }
-    header .logo-container{
-        width: 160px;
-    
-    }
-    header .letralogo-container{
-        /* margin: auto; */
-        width: 180px;
-        height: 75px;
-    }
-    /* BUSCADOR */
-   header .input-group {
-    margin: 15%;
-padding: auto;
-   width: 310px;
-    height: 40px;
-    }
-    .grid-barranav nav .grid-bar{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 
-    minmax(200px, 1fr));
-    gap: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin-left: 80px;
-    }
-       
-    
 }
+
+
+
 
 /* BUSCADOR */
 
@@ -134,7 +96,6 @@ height: 40px;
 }
 
 /* BARRA DE NAVEGACION */
-
 
 
 nav {
@@ -171,7 +132,7 @@ nav li {
 
 /* ESTILO FOOTER  */
 footer{
-    background-color: rgb(27, 23, 23);
+    background-color: rgb(2, 0, 0);
     clear: both;
     color: #ffffff;
     padding: 3em 0;
@@ -183,8 +144,8 @@ footer{
     margin:auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, 
-    minmax(200px, 1fr));
-    gap: 10px;
+    minmax(100px, 1fr));
+    gap: 180px;
     padding: auto;
    
 }
@@ -193,8 +154,8 @@ footer{
    text-align: center;
    list-style: none;
 }
-.grid-footer  h1 img{
-    width: 130px;
+.grid-footer  img{
+    width: 40px;
    
 }
 footer p{ 
@@ -202,6 +163,7 @@ footer p{
     margin-top:100px ;
     text-align: center;
 }
+
 
 
 main{
@@ -330,4 +292,105 @@ margin-right: 10px;
     cursor: pointer;
 }
 
+
+/* @MEDIA QUERY header logos empresa */
+
+
+@media (max-width:390px)
+{
+    /* HEADER DE BARRA DE NAVEGACION MEDIA QUERY */
+    /* LOGOS MEDIA QUERY:  */
+    header .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(150px, 1fr));
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  
+
+    }
+    header .logo-container{
+        width: 160px;
+    
+    }
+    header .letralogo-container{
+        /* margin: auto; */
+        width: 180px;
+        height: 75px;
+    }
+    /* BUSCADOR MEDIA QUERY*/
+   header .input-group {
+    margin: 15%;
+padding: auto;
+   width: 310px;
+    height: 40px;
+    }
+    .grid-barranav nav .grid-bar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(200px, 1fr));
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 80px;
+    }
+    /* FOOTER MEDIA QUERY */
+     .grid-footer1{
+        
+        background-color: rgb(0, 0, 0);
+        clear: both;
+        color: #ffffff;
+        padding: 0.1em 0;
+        margin:1px;
+        /* text-align:center; */
+    }
+    footer .grid-footer {
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 
+        minmax(300px, 1fr));
+        gap: 20px;
+        padding: auto;
+       
+    }
+    footer .grid-footer ul  {
+       text-align: center;
+       list-style: none;
+    }
+    footer .grid-footer  img{
+        width: 250px;
+       
+    }
+    footer p{ 
+        margin: auto;
+        text-align: center;
+    }
+    /* LOGOS DE MARCAS MEDIA QUERY */
+    span .logosmarcas .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 
+        minmax(98px, 1fr));
+        gap: 9px; 
+       
+    }
+    span .logosmarcas .grid-container img{
+        height: 40px;
+        width: 99px;
+    }
+    /* CATALO DE PRODUCTOS MEDIA QUERY  */
+.cata{
+    font-size: 22px;
+}
+main .item img{
+
+    width: 97%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+     
+}
+   
 
