@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(14, 14, 14, 0.526);
+    background-color: rgb(14, 14, 14);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -165,12 +165,38 @@ footer p{
 }
 
 
-
-main{
-background-color: rgba(255, 255, 255, 0.958);
-margin-left: 10px;
-margin-right: 10px;
+/* CONTENIDO MAIN  */
+.container{
+    overflow: hidden;
+    margin: 1px;
+    
+    padding: 1px;
+    
 }
+main {
+background-color: rgba(255, 255, 255, 0.958);
+float: left;
+width: 85%;
+margin: auto;
+padding: auto;
+
+
+}
+
+/* CONTENIDO DE PUBLICIDAD  */
+aside .flex-publicidad img{
+    width: 225px;
+
+}
+aside .flex-publicidad2 img{
+    width: 225px;
+}
+aside{
+    float: left;
+    width: 14.9%;
+    margin-left: 0.1%;
+} 
+
 
 
 /* GALERIA EN ANIMACION */
@@ -182,7 +208,7 @@ margin-right: 10px;
 
 .slider ul{
     display: flex;
-    padding:10px;
+    padding:1px;
     width: 500%;
     animation: cambio 30s infinite;
     animation-direction: alternate;
@@ -218,13 +244,15 @@ margin-right: 10px;
 .logosmarcas .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 
-    minmax(200px, 1fr));
-    gap: 20px; 
-    margin: 10px;
+    minmax(100px, 1fr));
+    gap: 25px; 
+   margin-top: 10px;
+   margin-left: 50px;
+
 }
 .logosmarcas .grid-container img{
-    height: 60px;
-    width: 130px;
+    height: 40px;
+    width: 100px;
 }
 
 
@@ -254,7 +282,7 @@ margin-right: 10px;
 .item img{
 
     width: 100%;
-    height: 310px;
+    height: 280px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
@@ -296,7 +324,7 @@ margin-right: 10px;
 /* @MEDIA QUERY header logos empresa */
 
 
-@media (max-width:390px)
+@media (max-width:600px)
 {
     /* HEADER DE BARRA DE NAVEGACION MEDIA QUERY */
     /* LOGOS MEDIA QUERY:  */
@@ -389,6 +417,20 @@ main .item img{
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all 0.5s;
+}
+
+header nav {
+    display: none;
+}
+main .slider{
+    display: none;
+}
+/* ASIDE BANNER  */
+aside {
+    display: none;
+}
+main {
+    width: 100%;
 }
      
 }
