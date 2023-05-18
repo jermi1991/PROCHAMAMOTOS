@@ -3,12 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    margin: auto;
+   
+    
 }
 
 /* MENU INFORMATIVO */
 header nav {
     background-color: rgb(240, 187, 25);
+    
    
 }
 header nav ul li{
@@ -28,7 +30,13 @@ header nav ul li a{
 
 header nav ul li a:hover {
     background-color: rgb(0,0,0,0.3);
+
 }
+/* @MEDIA QUERY header */
+@media (max-width:360px){
+    
+}
+
 
 
 /* ICONO DE INFORMACION  */
@@ -119,24 +127,29 @@ footer{
     color: #ffffff;
     padding: 3em 0;
     margin-top: 1em;
-    margin: 1px;
+    margin:auto;
     /* text-align:center; */
 }
 .grid-footer {
-    margin: 1px;
+    margin:auto;
     display: grid;
-    grid-template-columns: 300px 300px 390px 400px;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(200px, 1fr));
+    gap: 10px;
+    padding: auto;
    
 }
 .grid-footer ul {
+    margin: auto;
    text-align: center;
    list-style: none;
 }
-.grid-footer h1 img{
-    text-decoration: none;
+.grid-footer  h1 img{
     width: 130px;
+   
 }
 footer p{ 
+    margin: auto;
     margin-top:100px ;
     text-align: center;
 }
@@ -191,13 +204,14 @@ margin-right: 10px;
 
 }
 /* LOGO DE MARCAS */
-.logosmarcas .flex-container {
-    display: flex;
-    justify-content: space-between;
+.logosmarcas .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(200px, 1fr));
     gap: 20px; 
     margin: 10px;
 }
-.logosmarcas .flex-container img{
+.logosmarcas .grid-container img{
     height: 60px;
     width: 130px;
 }
@@ -211,8 +225,11 @@ margin-right: 10px;
 }
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(350px, 1fr));
+    gap: 80px;
+    padding: auto;
+    margin: auto;
 }
 
 .item{
