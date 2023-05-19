@@ -132,7 +132,7 @@ nav li {
 
 /* ESTILO FOOTER  */
 footer{
-    background-color: rgb(2, 0, 0);
+    background-color: rgb(53, 44, 44);
     clear: both;
     color: #ffffff;
     padding: 3em 0;
@@ -147,10 +147,11 @@ footer{
     minmax(100px, 1fr));
     gap: 180px;
     padding: auto;
+    font-size: 20px;
+    margin-bottom: 40px ;
    
 }
 .grid-footer ul {
-    margin: auto;
    text-align: center;
    list-style: none;
 }
@@ -159,9 +160,21 @@ footer{
    
 }
 footer p{ 
-    margin: auto;
-    margin-top:100px ;
+   
+    margin-top:30px ;
     text-align: center;
+   
+}
+
+.flex-logosredes img{
+    height: 100px;
+}
+.flex-logosredes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+
 }
 
 
@@ -196,7 +209,22 @@ aside{
     width: 14.9%;
     margin-left: 0.1%;
 } 
+/* COTIZACION EN DOLARES */
+aside .grid-cotizacion{
+    background-image: url(../imagenes/galeria/cotizacion.png);
+    background-color: #1b36ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
 
+    
+}
 
 
 /* GALERIA EN ANIMACION */
