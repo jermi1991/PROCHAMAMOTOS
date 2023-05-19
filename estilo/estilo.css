@@ -356,6 +356,9 @@ aside .grid-cotizacion{
 {
     /* HEADER DE BARRA DE NAVEGACION MEDIA QUERY */
     /* LOGOS MEDIA QUERY:  */
+    .grid-container img{
+        margin-top: 60px;
+    }
     header .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 
@@ -363,7 +366,6 @@ aside .grid-cotizacion{
     gap: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-  
 
     }
     header .logo-container{
@@ -447,7 +449,7 @@ main .item img{
     transition: all 0.5s;
 }
 
-header nav {
+.grid-logosempresa {
     display: none;
 }
 main .slider{
@@ -462,5 +464,23 @@ main {
 }
      
 }
+/* ELEMENTO FIJO PARA MEDIA QUERY DE MAX 600PX */
+.flex-elementofijo{
+    margin-left: 40%;
+    position:fixed;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 20px;
+}
+.flex-elementofijo img{
+    width: 20px;
+}
+.flex-elementofijo a{
+    text-decoration: none;
+}
    
-
+@media (min-width:600px){
+    .flex-elementofijo{
+        display: none;
+    }
+}
