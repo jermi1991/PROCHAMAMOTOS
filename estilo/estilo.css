@@ -330,10 +330,10 @@ aside .grid-cotizacion{
 }
 
 
-/* @MEDIA QUERY header logos empresa */
+/* @MEDIA QUERY PARA SMARTPHONE */
 
 
-@media (max-width:600px)
+@media (max-width:767px)
 {
     /* HEADER DE BARRA DE NAVEGACION MEDIA QUERY */
     /* LOGOS MEDIA QUERY:  */
@@ -352,6 +352,9 @@ aside .grid-cotizacion{
     header .logo-container{
         width: 160px;
     
+    }
+    .grid-barranav{
+        display: none;
     }
     header .letralogo-container{
         /* margin: auto; */
@@ -429,7 +432,10 @@ main .item img{
     border-radius: 10px 10px 0 0;
     transition: all 0.5s;
 }
-
+/* MENU RESPONSIVE  */
+.menu-reponsive nav a {
+    color: #fff;
+}
 .grid-logosempresa {
     display: none;
 }
@@ -489,6 +495,7 @@ main {
 }
 /* ELEMENTO FIJO PARA MEDIA QUERY DE MAX 600PX */
 .flex-elementofijo{
+    background-color: #ff731b;
     margin-left: 40%;
     position:fixed;
     border-radius: 10px;
@@ -501,12 +508,21 @@ main {
 .flex-elementofijo a{
     text-decoration: none;
 }
+
    
-@media (min-width:600px){
+@media (min-width:768px){
     .flex-elementofijo{
         display: none;
     }
     .slider-mobile{
         display: none;
     }
+    .menu-reponsive{
+        display: none;
+    }
+    
+}
+@media (min-width: 767px) and (max-width: 1023px)
+{
+    
 }
