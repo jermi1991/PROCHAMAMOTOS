@@ -545,10 +545,10 @@ main {
 .grid-tarjetas{
     display: grid;
     grid-template-columns: repeat(auto-fit, 
-    minmax(300px, 1fr));
+    minmax(200px, 1fr));
     gap: 9px; 
    margin: auto;
-   padding: 50px;
+   padding: 10px;
    text-align: center;
 
 }
