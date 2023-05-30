@@ -557,7 +557,8 @@ main {
     display: flex;
     justify-content: center;
 }
-.flex-servi h1{
+.flex-servi h3{
     color: #fff;
+    margin: 10px;
    
 }
