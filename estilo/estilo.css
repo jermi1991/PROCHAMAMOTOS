@@ -340,6 +340,14 @@ aside .grid-cotizacion{
     .grid-container img{
         margin-top: 60px;
     }
+    
+    header {
+        background-image: url(../imagenes/galeria/textura-fondo.jpg);
+        background-size: 1500px;
+         margin: 0;
+        padding: 0;
+        }
+
     header .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 
@@ -490,6 +498,13 @@ main {
 .grid-informacion{
     display: none;
 }
+.flex-tarjetas {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
 
      
 }
@@ -538,17 +553,15 @@ main {
       width: 100%;
      }
 
+    
 }
 
 /* PAGINA DE SERVICIO  */
 
-.grid-tarjetas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 
-    minmax(200px, 1fr));
-    gap: 9px; 
-   margin: auto;
-   padding: 10px;
+.flex-tarjetas{
+    display:flex;
+   justify-content: space-around;
+   margin: 20px;
    text-align: center;
 
 }
