@@ -1,9 +1,11 @@
 body {
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
 
+
+/* BARRA DE INFORMACION NARANJA */
 
 }
 .grid-informacion {
@@ -35,10 +37,8 @@ body {
 header {
    background-image: url(../imagenes/galeria/textura-fondo.jpg);
    background-size: 100%;
-    margin: 0;
-   padding: 0;
-    
-    
+
+ 
 }
 header .grid-container{
     display:grid;
@@ -71,7 +71,7 @@ header .letralogo-container{
 
 .input-group {
 margin: auto;
-width: 350px;
+width: 320px;
 height: 40px;
 }
 
@@ -80,7 +80,7 @@ height: 40px;
 
 .grid-barranav nav {
 background-color: rgb(143, 91, 255);
-margin-bottom: 2px;
+
 }
 
 .grid-barranav nav ul {
@@ -110,16 +110,45 @@ text-align: center;
  .grid-barranav nav ul li a:hover{
     background-color: rgba(0,0,0,0.3);
 }
-
+/* pagina de taller  */
+.carrusel-taller{
+    margin: 40px;
+}
+.historia{
+    margin: 40px;
+    width: 95%;
+    font-style: oblique;
+   
+}
+.historia h3{
+    color: #ffffff;
+    background-color: #ff731b;
+    text-align: center;
+}
+.historia p{
+    text-align: justify;
+    margin-top: 30px;
+}
+.ofrecemos ul li{
+    list-style: none;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 2;
+    
+}
+.grid-servi{
+    background-color: #ff731b;
+    text-align: center;
+    color: #ffffff;
+}
 /* ESTILO FOOTER  */
 footer{
     background-color: rgb(53, 44, 44);
     clear: both;
     color: #ffffff;
-    padding: 3em 0;
-    margin-top: 1em;
+    padding: 2em 0;
     margin:auto;
-    /* text-align:center; */
+
 }
 .grid-footer {
     margin:auto;
@@ -142,13 +171,12 @@ footer{
 }
 footer p{ 
    
-    margin-top:30px ;
     text-align: center;
    
 }
 
 .flex-logosredes img{
-    height: 100px;
+    height: 50px;
 }
 .flex-logosredes{
     display: flex;
@@ -179,16 +207,18 @@ padding: auto;
 
 /* CONTENIDO DE PUBLICIDAD  */
 aside .flex-publicidad img{
-    width: 225px;
+    width: 100%;
 
 }
 aside .flex-publicidad2 img{
-    width: 225px;
+    width: 100%;
+    
 }
 aside{
     float: left;
-    width: 14.9%;
-    margin-left: 0.1%;
+    width: 15%;
+    /* margin-left: 0.1%; */
+    overflow: auto;
 } 
 /* COTIZACION EN DOLARES */
 aside .grid-cotizacion{
