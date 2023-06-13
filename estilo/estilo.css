@@ -544,7 +544,7 @@ section img {
     justify-content: center;
     flex-wrap: wrap;
     padding: 5px;
-    
+
 }
 
 /*-----------------------------------------------------@MEDIA QUERY PARA SMARTPHONE--------------------------------- */
@@ -568,7 +568,7 @@ section img {
     header .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 
-    minmax(150px, 1fr));
+    minmax(180px, 1fr));
     gap: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -590,7 +590,7 @@ section img {
    header .input-group {
     margin: 15%;
 padding: auto;
-   width: 310px;
+   width: 260px;
     height: 40px;
     }
     .grid-barranav nav .grid-bar{
