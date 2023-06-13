@@ -112,7 +112,7 @@ Pueden verlo con este link[acesso al proyecto](https://github.com/jermi1991/PROC
 ![Desarrolador web](https://github.com/jermi1991/PROCHAMAMOTOS/blob/master/imagenes/Imagenes%20del%20readme/JERMI.png?raw=true)
   Jermi Zapata
   ![pagina principal](https://github.com/jermi1991/PROCHAMAMOTOS/blob/master/imagenes/Imagenes%20del%20readme/MARTIN.png?raw=true)
-  Martin
+  Martin Suarez
 
   </div>
 
