@@ -5,7 +5,7 @@ body {
     line-height: 20px;
 
 
-/* BARRA DE INFORMACION NARANJA */
+/* ----------------------------------------------BARRA DE INFORMACION NARANJA -------------------------------------*/
 
 }
 .grid-informacion {
@@ -67,15 +67,15 @@ header .letralogo-container{
 
 
 
-/* BUSCADOR */
+/*------------------------------------------------- BUSCADOR---------------------------- */
 
 .input-group {
 margin: auto;
-width: 320px;
+width: 300px;
 height: 40px;
 }
 
-/* BARRA DE NAVEGACION */
+/* ------------------------------------------------------BARRA DE NAVEGACION------------------------------------- */
 
 
 .grid-barranav nav {
@@ -110,22 +110,25 @@ text-align: center;
  .grid-barranav nav ul li a:hover{
     background-color: rgba(0,0,0,0.3);
 }
-/* pagina de taller  */
+/*--------------------------------------------------------- pagina de taller-------------------------------------  */
 .carrusel-taller{
-    margin: 40px;
+    margin: 5px;
 }
-.historia{
+.grid-historia{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(200px, 1fr));
+    gap: 60px;
     margin: 40px;
-    width: 95%;
     font-style: oblique;
    
 }
-.historia h3{
+main h3{
     color: #ffffff;
     background-color: #ff731b;
     text-align: center;
 }
-.historia p{
+.grid-historia p{
     text-align: justify;
     margin-top: 30px;
 }
@@ -141,7 +144,164 @@ text-align: center;
     text-align: center;
     color: #ffffff;
 }
-/* ESTILO FOOTER  */
+
+/* --------------------------------------------PAGINA DE CONTACTO ------------------------------------ */
+/* -------------------------------------------- FORMULARIO ------------------------------------------*/
+.titulo-solicitud{
+    background-color: #ff731b;
+    color: #ffffff;
+    text-align: center;
+}
+main .formulario-contacto{
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #035f22;
+    box-shadow: 0 2px 10px #b8aa10, 0 2px 10px #035f22;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.formulario__label {
+    display: block;
+    padding: 10px 0;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 80%;
+    background: transparent;
+    border-bottom: 2px solid #4603ff;
+    /* border-right: none; */
+    color: #000000;
+    font-size: 17px;
+    outline: none;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: all 1s;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+    z-index: 1000;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__input:focus {
+    box-shadow: 0 0 5px #035f22;
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__span {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.formulario__checkbox{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+}
+
+.formulario__grupo-terminos {
+    text-align: center;
+}
+
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    display: none;
+    /* height: 45px; */
+    /* line-height: 45px; */
+    padding: 15px;
+    border-radius: 15px;
+    background: rgb(255, 174, 0);
+    text-align: center;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    padding: 15px 35px;
+    background: #2200ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formulario__btn:hover {
+    background: #ffffff;
+    transition: 1s;
+}
+
+.formulario__mensaje-exito {
+    font-size: 2em;
+    color: #debf0e;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo { 
+    display: block;
+}
+
+
+/* --------------------------------------------- VALIDACIÓN ----------------------------------------- */
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #29ee0f;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #ee0f0f;
+}
+
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #ee0f0f;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 1px solid #ee0f0f;
+    
+}
+
+
+/* ---------------------------------------------------ESTILO FOOTER  -----------------------------------*/
 footer{
     background-color: rgb(53, 44, 44);
     clear: both;
@@ -187,7 +347,7 @@ footer p{
 }
 
 
-/* CONTENIDO MAIN  */
+/* --------------------------------------------------------CONTENIDO MAIN ------------------------------ */
 .container{
     overflow: hidden;
     margin: 1px;
@@ -205,7 +365,7 @@ padding: auto;
 
 }
 
-/* CONTENIDO DE PUBLICIDAD  */
+/* ----------------------------------------CONTENIDO DE PUBLICIDAD ------------------------------------- */
 aside .flex-publicidad img{
     width: 100%;
 
@@ -220,7 +380,7 @@ aside{
     /* margin-left: 0.1%; */
     overflow: auto;
 } 
-/* COTIZACION EN DOLARES */
+/*-------------------------------------------- COTIZACION EN DOLARES------------------------------ */
 aside .grid-cotizacion{
     background-image: url(../imagenes/galeria/cotizacion.png);
     background-color: #1b36ff;
@@ -238,7 +398,7 @@ aside .grid-cotizacion{
 }
 
 
-/* GALERIA EN ANIMACION */
+/* ----------------------------------------------------GALERIA EN ANIMACION ----------------------------*/
 .slider{
     width: 100%;
     overflow: hidden;
@@ -279,7 +439,7 @@ aside .grid-cotizacion{
     100% {margin-left: -400%;}
 
 }
-/* LOGO DE MARCAS */
+/*----------------------------------------------------LOGO DE MARCAS --------------------------*/
 .logosmarcas .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 
@@ -295,7 +455,7 @@ aside .grid-cotizacion{
 }
 
 
-/* Catalago Productos */
+/* ---------------------------------------------CATALAGO DE VENTA-------------------------- */
 .cata{
     text-align: center;
     background-color: #ff731b;
@@ -360,7 +520,34 @@ aside .grid-cotizacion{
 }
 
 
-/* @MEDIA QUERY PARA SMARTPHONE */
+/* ------------------------------------------------PAGINA DE GALERIA-----------------------------------  */
+
+section img {
+    width: 100%;
+
+}
+ .flex-row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+.flex-video{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    
+}
+
+/*-----------------------------------------------------@MEDIA QUERY PARA SMARTPHONE--------------------------------- */
 
 
 @media (max-width:767px)
@@ -399,7 +586,7 @@ aside .grid-cotizacion{
         width: 180px;
         height: 75px;
     }
-    /* BUSCADOR MEDIA QUERY*/
+    /* ------------------------------------------------BUSCADOR MEDIA QUERY----------------------------*/
    header .input-group {
     margin: 15%;
 padding: auto;
@@ -415,7 +602,7 @@ padding: auto;
     text-decoration: none;
     margin-left: 80px;
     }
-    /* FOOTER MEDIA QUERY */
+    /* --------------------------------------------------------FOOTER MEDIA QUERY-------------------------- */
      .grid-footer1{
         
         background-color: rgb(0, 0, 0);
@@ -446,7 +633,7 @@ padding: auto;
         margin: auto;
         text-align: center;
     }
-    /* LOGOS DE MARCAS MEDIA QUERY */
+    /* ---------------------------------------------LOGOS DE MARCAS MEDIA QUERY-------------------- */
 span .logosmarcas .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 
@@ -458,7 +645,7 @@ span .logosmarcas .grid-container {
         height: 40px;
         width: 99px;
     }
-    /* CATALO DE PRODUCTOS MEDIA QUERY  */
+    /*----------------------------------------------- CATALO DE PRODUCTOS MEDIA QUERY  -----------------*/
 .cata{
     font-size: 22px;
 }
@@ -470,7 +657,11 @@ main .item img{
     border-radius: 10px 10px 0 0;
     transition: all 0.5s;
 }
-/* MENU RESPONSIVE  */
+
+.column{
+    flex: 100%;
+}
+/* --------------------------------------------------MENU RESPONSIVE------------------------  */
 .menu-reponsive nav a {
     color: #fff;
 }
@@ -480,14 +671,14 @@ main .item img{
 main .slider{
     display: none;
 }
-/* ASIDE BANNER  */
+/*---------------------------------------------------------- ASIDE BANNER --------------------------------- */
 aside {
     display: none;
 }
 main {
     width: 100%;
 }
-/* GALERIA EN ANIMACION */
+/* --------------------------------------------------GALERIA EN ANIMACION --------------------*/
 .slider-mobile{
     width: 100%;
     overflow: hidden;
@@ -538,7 +729,7 @@ main {
 
      
 }
-/* ELEMENTO FIJO PARA MEDIA QUERY DE MAX 600PX */
+/* -------------------------------------------------ELEMENTO FIJO PARA MEDIA QUERY DE MAX 600PX --------------------------*/
 .flex-elementofijo{
     background-color: #ff731b;
     margin-left: 40%;
@@ -565,9 +756,11 @@ main {
     .menu-reponsive{
         display: none;
     }
+
+    
     
 }
-/* MEDIDA PARA TABLET  */
+/* ------------------------------------------------------------MEDIDA PARA TABLET  -----------------------------------*/
 @media (min-width: 767px) and (max-width: 1023px){
     .grid-container .letralogo-container {
         width: 180px;
@@ -586,7 +779,7 @@ main {
     
 }
 
-/* PAGINA DE SERVICIO  */
+/*-----------------------------------------------------------PAGINA DE SERVICIO --------------------------------- */
 
 .flex-tarjetas{
     display:flex;
@@ -604,4 +797,22 @@ main {
     color: #fff;
     margin: 10px;
    
+}
+
+/* -------------------------------------------- RESPONSIVE  --------------------------------------*/
+
+@media screen and (max-width:720px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos, 
+    .formulario__mensaje, 
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
 }

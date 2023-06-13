@@ -22,17 +22,19 @@
 <!-- NORMALIZE DE CSS -->
 <link rel="stylesheet" href="../estilo/narmalize.css ">
 
+<!-- ICONOS FONTAWESONE -->
+<script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-<!-- ELEMENTO FIJO PARA MEDIA QUERY DE MAX 600PX -->
+<!----------------------------------- ELEMENTO FIJO PARA MEDIA QUERY DE MAX 600PX ------------------------->
 <div>
 <nav class="flex-elementofijo">
         <img src="../imagenes/galeria/WhatsApp.svg.png" alt="whatsappicono">
         <a href="https://wa.link/e3hbtr">WhatsApp Online</a> 
     </nav>
 </div>
-<!-- MENU INFORMATIVO  -->
+<!----------------------------------------------- MENU INFORMATIVO  ------------------------->
        <div class="grid-informacion">
                 <p><img class="logowhatsapp" src="../imagenes/whatsapp logo.png" alt="imagen whatsapp"><a href="https://wa.link/e3hbtr">ACCESO WHATSAPP</a></p>
 
@@ -43,21 +45,23 @@
                 <p><img class="iconoreloj" src="../imagenes/reloj.png" alt=""> Lun a Vie 09hrs a 19hrs Sab 09hrs a 14hrs</p>
          </div>    
 
-         <!-- LOGOS Y INPUT BUTTON  -->
+         <!------------------------------- LOGOS Y INPUT BUTTON  --------------------->
 
     <div class="grid-container">
 
-        <img class="logo-container" src="../imagenes/logo 2023.png" alt="logo redondo">
+      <a href="../index.html"><img class="logo-container" src="../imagenes/logo 2023.png" alt="logo redondo"></a>
 
       
-        <img class="letralogo-container" src="../imagenes/letras logo.png" alt="logo con letras">
-        
+      <a href="../index.html"><img class="letralogo-container" src="../imagenes/letras logo.png" alt="logo con letras"></a>
+
+
+        <!--------------------------------------- BUSCADOR  ------------------------>
         <div class="input-group">
             <input type="search" class="form-control rounded" placeholder="MOTOS, ACCESORIO, TALLER, CASCO" aria-label="Search" aria-describedby="search-addon" />
             <button type="button" class="btn btn-outline-light">Buscar</button>
           </div>
        </div>
-  
+  <!------------------------------------ BARRA DE MENU --------------------------- -->
     <div class="grid-barranav">
     <nav>
         <ul class="grid-bar">
@@ -65,10 +69,12 @@
             <li><a href="../page/servicios.html">SERVICIOS</a></li>
             <li><a href="../page/taller.html">TALLER</a></li>
             <li><a class="activo" href="">GALERIAS</a></li>
-            <li><a href="">CONTACTANOS</a></li>
+            <li><a href="./contacto.html">CONTACTANOS</a></li>
         </ul>
     </nav>
 </div>
+
+<!----------------------------------------- MENU RESPONSIVE MOVIL ---------------------- -->
 <div class="menu-reponsive">
 
     <nav class="navbar navbar-expand-lg bg-primary">
@@ -89,7 +95,7 @@
                 <a class="nav-link" href="../page/taller.html">TALLER</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTOS</a>
+                <a class="nav-link" href="./contacto.html">CONTACTOS</a>
               </li>
               
         
@@ -100,8 +106,9 @@
       </nav>
 </div>
   </header>
-    <main >
 
+    <main >
+<!------------------------------------------ CARRUSER RESPONSIVE MOVIL  ------------------------>
         <div class="slider-mobile">
             <ul>
                 <li><img src="../imagenes/carrusel mobile/CASCOS.gif" alt=""></li>
@@ -111,10 +118,51 @@
                 
             </ul>
         </div>
-       
+
+
+      <!----------------------------------------------- GALERIA DE IMAGENES -------------------------------- -->
+      <section >
+        <h3>GALERIA CHAMA MOTOS</h3>
+        <div class="flex-row">
+        <div class="column">
+          <img src="../imagenes/galeria/1.jpg" alt="foto 1">
+          <img src="../imagenes/galeria/2.jpg" alt="foto 2">
+          <img src="../imagenes/galeria/3.jpg" alt="foto 3">
+          <img src="../imagenes/galeria/4.jpg" alt="foto 4">
+          <img src="../imagenes/galeria/5.jpg" alt="foto 5">
+        </div>
+        <div class="column">
+          <img src="../imagenes/galeria/6.jpg" alt="foto 6">
+          <img src="../imagenes/galeria/7.jpg" alt="foto 7">
+          <img src="../imagenes/galeria/8.jpg" alt="foto 8">
+          <img src="../imagenes/galeria/9.jpg" alt="foto 9">
+          <img src="../imagenes/galeria/10.jpg" alt="foto 10">
+        </div>
+
+        <div class="column">
+          <img src="../imagenes/galeria/11.jpg" alt="foto 11">
+          <img src="../imagenes/galeria/12.jpg" alt="foto 12">
+          <img src="../imagenes/galeria/13.jpg" alt="foto 13">
+          <img src="../imagenes/galeria/14.jpg" alt="foto 14">
+          <img src="../imagenes/galeria/15.jpg" alt="foto 15">
+        </div>
+
+        <div class="column">
+          <img src="../imagenes/galeria/16.jpg" alt="foto 16">
+          <img src="../imagenes/galeria/17.jpg" alt="foto 17">
+          <img src="../imagenes/galeria/18.jpg" alt="foto 18">
+          <img src="../imagenes/galeria/19.jpg" alt="foto 19">
+          <img src="../imagenes/galeria/20.jpg" alt="foto 20">
+        </div>
+      </div>
+      <h3>TE PRESENTAMOS EL TALLER</h3>
+      <div class="flex-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/STiEkYcR3CY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      </section>
         
     </main>
-
+<!--------------------------------------- BANNER PUBLICIDAD  ------------------------->
     <aside>
         <div class="flex-publicidad">
         <img src="../imagenes/galeria/promociones.png" alt="bannerpublicidad">
@@ -134,39 +182,41 @@
 
     </aside>
 
+    <!------------------------------------------ FOOTER  --------------------------------------->
+
     <footer class="grid-footer1">
-        <div class="grid-footer">
-            <ul>
-                <h3>CHAMA MOTOS</h3>
-                <li><a href="">Nuestra Historia</a></li>
-                <li><a href="">Trabaja con nosotros</a></li>
-                <li><a href="">¿PORQUE ELEGIRNOS?</a></li>
-            </ul>
-            <ul>
-                <h3>SERVICIOS</h3>
-                <li><a href="">Servicio de Grua</a></li>
-                <li><a href="">Taller de servicio</a></li>
-        
-                
-            </ul>
-            <ul>
-                <h3>LINK DE INTERES</h3>
-                <li><a href="">Contactos</a></li>
-                <li><a href="">Novedades</a></li>
-                <li><a href="https://goo.gl/maps/QyPMFrb54avxTLVu5">Ubicación</a></li>
-                
-            </ul>
-             
-        </div>
-        <div class="flex-logosredes">
-            <img src="../imagenes/galeria/WhatsApp.svg.png" alt="">
-            <img src="../imagenes/galeria/instagram color.png" alt="">
-        </div>
-       
-        <p>DISEÑADO POR JERMI ZAPATA RESERVA DERECHO POR CHAMA MOTOS &copy; 2023 </p>
-    </footer>
+      <div class="grid-footer">
+          <ul>
+              <h3>CHAMA MOTOS</h3>
+              <li><a href="../page/taller.html">Nuestra Historia</a></li>
+              <li><a href="https://www.bumeran.com.ar/empleos/tecnico-mecanico-bumeran-selecta-1115847914.html?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Trabaja con nosotros</a></li>
+              <li><a href="https://www.youtube.com/watch?v=STiEkYcR3CY">¿PORQUE ELEGIRNOS?</a></li>
+          </ul>
+          <ul>
+              <h3>SERVICIOS</h3>
+              <li><a href="https://www.argentino.com.ar/villa-lugano/gruas">Servicio de Grua</a></li>
+              <li><a href="../page/taller.html">Taller de servicio</a></li>
+      
+              
+          </ul>
+          <ul>
+              <h3>LINK DE INTERES</h3>
+              <li><a href="../page/contacto.html">Contactos</a></li>
+              <li><a href="https://www.instagram.com/chama_motos/?hl=es">Novedades</a></li>
+              <li><a href="https://goo.gl/maps/QyPMFrb54avxTLVu5">Ubicación</a></li>
+              
+          </ul>
+           
+      </div>
+      <div class="flex-logosredes">
+          <a href="https://wa.link/e3hbtr"><img src="../imagenes/galeria/WhatsApp.svg.png" alt=""></a>
+          <a href="https://www.instagram.com/chama_motos/?hl=es"><img src="../imagenes/galeria/instagram color.png" alt=""></a>
+      </div>
+     
+      <p>DISEÑADO POR JERMI ZAPATA RESERVA DERECHO POR CHAMA MOTOS &copy; 2023 </p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-   
-</body>
-</html>
+  <script src="../js/script.js"></script>
+  
+  </body>
+  </html>
