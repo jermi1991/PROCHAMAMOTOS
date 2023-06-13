@@ -568,7 +568,7 @@ section img {
     header .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 
-    minmax(180px, 1fr));
+    minmax(150px, 1fr));
     gap: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
